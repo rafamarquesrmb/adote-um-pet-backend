@@ -16,8 +16,8 @@ Including another URLconf
 
 from django.urls import path
 
-from .views import home
+from .views import PetList
 
 urlpatterns = [
-    path('home/', home)
+    path('', PetList.as_view())
 ]
